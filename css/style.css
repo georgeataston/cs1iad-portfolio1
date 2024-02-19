@@ -1,0 +1,455 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.link {
+    color: #363636;
+    text-decoration-style: underline;
+}
+
+.link:hover {
+    text-decoration-style: wavy;
+    text-decoration-color: #363636;
+    color: #363636;
+}
+
+.link-white {
+    color: white;
+    text-decoration-style: underline;
+}
+
+.link-white:hover {
+    text-decoration-style: wavy;
+    text-decoration-color: white;
+    color: white;
+}
+
+/* Nav bar */
+.nav {
+    background-color: #363636;
+    display: flex;
+    flex-direction:row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav .nav-front:before {
+	content: '// ';
+    font-size: 20px;
+    font-weight:900;
+}
+
+.nav-front {
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.nav-back {
+    margin-left: auto;
+}
+
+#nav-active {
+    background-color: #821A1B;
+    color: white;
+}
+
+.nav-entry {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.nav-entry:hover {
+    background-color: white;
+    color: #363636;
+}
+
+/* Hero */
+.main-header {
+    background-color: #821A1B;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.main-header h1:before {
+	content: '// ';
+    font-size: 30px;
+    font-weight:900;
+}
+
+.main-header h1 {
+    color: white;
+    padding-left: 50px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+#hero-h2-e:before {
+	content: '/ E ';
+    font-size: 20px;
+    font-weight:900;
+}
+
+#hero-h2-t:before {
+	content: '/ T ';
+    font-size: 20px;
+    font-weight:900;
+}
+
+#hero-h2-f:before {
+	content: '/ F ';
+    font-size: 20px;
+    font-weight:900;
+}
+
+#hero-h2:before {
+	content: '/ ';
+    font-size: 20px;
+    font-weight:900;
+}
+
+.main-header h2 {
+    color: white;
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+/* Footer */
+.footer {
+    height: 100px;
+    background-color: #363636;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+@media (min-width: 1000px) {
+    .footer-sticky {
+        width: 100%;
+        bottom: 0;
+        overflow:hidden;
+    }
+}
+
+/* Sections */
+.stretchable {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.education h1:before, .work-experience h1:before, .projects h1:before, .skills h1:before, .interests h1:before, .prof h1:before, .contact-me h1:before, .cm-popup h1:before {
+	content: '// ';
+    font-size: 30px;
+    font-weight:900;
+}
+
+.education h1, .work-experience h1, .projects h1, .skills h1, .interests h1, .prof h1, .contact-me h1, .cm-popup h1 {
+    color: black;
+    padding-left: 50px;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.education h2:before, .work-experience h2:before, .projects h2:before, .skills h2:before, .interests h2:before, .prof h2:before, .contact-me h2:before, .cm-popup h2:before {
+	content: '/ ';
+    font-size: 20px;
+    font-weight:900;
+}
+
+.education h2, .work-experience h2, .projects h2, .skills h2, .interests h2, .prof h2, .contact-me h2, .cm-popup h2 {
+    color: black;
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.education ul, .work-experience ul, .projects ul, .skills ul, .interests ul, .prof ul {
+    padding-left: 80px;
+    font-size: 17px;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skills-container img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: scale-down;
+    padding-bottom: 10px;
+}
+
+.skills-subcontainer {
+    border-color: #363636;
+    border-style: solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+/* Professional Profiles */
+.prof-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 90px;
+}
+
+.prof-container img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: scale-down;
+}
+
+.prof-subcontainer {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+.prof-subcontainer p {
+    padding-left: 30px;
+}
+
+/* Portfolio */
+.portfolio h1:before {
+    content: '// ';
+    font-size: 30px;
+    font-weight:900;
+}
+
+.portfolio h1 {
+    color: black;
+    padding-left: 50px;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.portfolio h2:before {
+    content: '/ ';
+    font-size: 20px;
+    font-weight:900;
+}
+
+.portfolio h2 {
+    color: black;
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+#portfolio-white {
+    color: white;
+}
+
+#portfolio-red {
+    color: rgb(255, 85, 85);
+}
+
+.portfolio p {
+    padding-left: 80px;
+    font-size: 17px;
+}
+
+.portfolio ul {
+    padding-left: 110px;
+    font-size: 17px;
+}
+
+.portfolio img {
+    width:  100%;
+    height: 100%;
+    object-fit: scale-down;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#portfolio-bubbletill {
+    background-color: #004494;
+    color: white;
+    padding-bottom: 10px;
+}
+
+#portfolio-isborisgone {
+    background-color: rgba(113, 63, 18);
+    color: white;
+    padding-bottom: 10px;
+}
+
+#portfolio-surya {
+    background-color: rgb(72, 95, 199);
+    color: white;
+    padding-bottom: 10px;
+}
+
+#portfolio-herobrine {
+    background-color: black;
+    color: rgb(255, 85, 85);
+    padding-bottom: 10px;
+}
+
+.portfolio-bq-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.portfolio blockquote {
+    margin-left: 80px;
+    font-size: 17px;
+    
+    border-color: #363636;
+    border-style: solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Contact me */
+
+.contact-me .cm-label::before, .cm-popup .cm-label::before {
+    content: '/ ';
+    font-size: 17px;
+    font-weight:900;
+}
+
+.contact-me .cm-label, .cm-popup .cm-label {
+    padding-left: 70px;
+}
+
+.contact-me input, .contact-me textarea, .contact-me .submit {
+    margin-top: 5px;
+    margin-left: 80px;
+}
+
+.contact-me .cm-regular {
+    width: 400px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #363636;
+}
+
+.contact-me .cm-large {
+    width: 400px;
+    padding: 15px;
+    height: 100px;
+    border: none;
+    border-bottom: 2px solid #363636;
+}
+
+.contact-me .submit {
+    background-color: #363636;
+    color: white;
+    padding: 20px;
+    width: 400px;
+    border: none;
+    font-size: 17px;
+}
+
+.cm-popup .submit {
+    background-color: #363636;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    font-size: 17px;
+    margin-left: 70px;
+}
+
+.contact-me .submit:hover, .cm-popup .submit:hover {
+    cursor:pointer;
+    background-color: #4a4a4a;
+}
+
+.contact-me .submit:active, .cm-popup .submit:active {
+    cursor:pointer;
+    background-color: white;
+    color: #363636;
+    border: 1px solid #363636;
+}
+
+.cm-error {
+    background-color: red;
+    color: white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.cm-success {
+    background-color: green;
+    color: white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#cm-white {
+    color: white;
+}
+
+.cm-popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.cm-popup-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+}
+
+.cm-popup-show {
+    display: block;
+}
+
+.cm-popup .cm-label::before {
+    content: '/ ';
+    font-size: 17px;
+    font-weight:900;
+}
+
+.cm-popup p {
+    padding-left: 70px;
+}
+
+.mv {
+    width: 100%;
+    display: none;
+}

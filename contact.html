@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | George Hotten</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="js/contact.js"></script>
+</head>
+<body>
+    <!-- Nav -->
+    <div class="nav">
+        <a class="nav-front">George Hotten</a>
+        <div class="nav-back">
+            <a class="nav-entry" href="index.html">Home</a>
+            <a class="nav-entry" href="portfolio.html">Portfolio</a>
+            <a class="nav-entry" id="nav-active" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <header class="main-header">
+        <div class="stretchable">
+            <h1>Contact Me</h1>
+            <h2 id="hero-h2-e"><a href="mailto:230078352@aston.ac.uk" class="link-white">230078352@aston.ac.uk</a></h2>
+            <h2 id="hero-h2-t">07123456789</h2>
+            <h2 id="hero-h2-f">or use the form below</h2>
+        </div>
+    </header>
+
+    <main class="stretchable">
+        <section class="contact-me">
+            <div class="cm-success" id="cm-success">
+                <h1 id="cm-white">Thank you</h1>
+                <h2 id="cm-white">Your request has been submitted successfully.</h2>
+            </div>
+            <h1>Want to start a project?</h1>
+            <h2>Please fill out the form below</h2>
+            <br>
+            <div class="cm-error" id="cm-error">
+                <h1 id="cm-white">Error</h1>
+                <h2 id="cm-white" name="cm-error-reason">Example error reason.</h2>
+            </div>
+            <form id="contact-form" onsubmit="return validateForm()">
+                <label class="cm-label" for="firstname">First Name</label><br>
+                <input class="cm-regular" type="text" id="firstname" name="firstname" required/>
+
+                <br><br>
+                <label class="cm-label" for="email">E-mail</label><br>
+                <input class="cm-regular" type="text" id="email" name="email" required/>
+
+                <br><br>
+                <label class="cm-label" for="confirmemail">Confirm e-mail</label><br>
+                <input class="cm-regular" type="text" id="confirmemail" name="confirmemail" required/>
+
+                <br><br>
+                <label class="cm-label" for="number">Phone Number</label><br>
+                <input class="cm-regular" type="tel" id="number" name="number" required/>
+
+                <br><br>
+                <label class="cm-label" for="description">Project Description</label><br>
+                <textarea class="cm-large" type="text" id="description" name="description" required></textarea>
+
+                <br><br>
+                <label class="cm-label" for="date">Meeting Date</label><br>
+                <input class="cm-regular" type="date" id="date" name="date" required/>
+
+                <br><br>
+                <label class="cm-label" for="duration">Meeting Duration (in hours)</label><br>
+                <input class="cm-regular" type="number" id="duration" name="duration" required/>
+
+                <br><br>
+                <label class="cm-label" for="pref_contact">Preferred Method of Contact</label><br>
+                <input type="radio" id="contact_email" name="pref_contact" value="E-mail" required/>
+                <label for="contact_email">E-mail</label><br>
+                <input type="radio" id="contact_phone" name="pref_contact" value="Phone" required/>
+                <label for="phone">Phone</label><br>
+
+                <br><br>
+                <button class="submit">Submit</button>
+                <br><br>
+            </form>
+        </section>
+    </main>
+
+    <div class="cm-popup" id="cm-popup">
+        <div class="cm-popup-content">
+            <h1>Please confirm</h1>
+            <h2>Are these details correct?</h2>
+            <br>
+
+            <label class="cm-label">To</label><br>
+            <p>230078352@aston.ac.uk</p>
+
+            <label class="cm-label">From</label><br>
+            <p id="cm-from">example@example.com - 07123456789</p>
+
+            <label class="cm-label">Meeting Date and Duration</label><br>
+            <p id="cm-date">12/2/2024 - 1 hour(s)</p>
+
+            <br>
+            <button class="submit" onclick="popupConfirm()">Submit</button>
+            <button class="submit" onclick="popupCancel()">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer footer-sticky">
+        <div class="stretchable">
+            <p><b>© George Hotten 2024</b></p>
+            <a class="link-white" href="https://github.com/georgeataston/cs1iad-portfolio1">source</a> &middot;
+            <a class="link-white" href="https://www.linkedin.com/in/george-hotten-906273250/">linkedin</a> &middot;
+            <a class="link-white" href="https://github.com/gxorge">github</a>
+        </div>
+    </footer>
+</body>
+</html>
