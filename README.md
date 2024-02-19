@@ -1,0 +1,2 @@
+# CS1IAD: Portfolio 1 - Create a Personal CV Webpage
+This site was created for my first year module CS1IAD. The task was to create a website (only using HTML, CSS, and JavaScript) to act as my CV. This work is currently pending a grade. The site can be demoed on my [uni work site](https://uniwork.ghott.me/cs1iad-p1)
